@@ -15,23 +15,34 @@ object VectorSpecification extends Properties("Vector") {
 //    else (v * s).length < v.length
 //  }
   
-//  val ints = Gen.choose(-100, 100)
-//  
-//  val vectors: Gen[Vector] = for {
-//    x <- ints
-//	y <- ints
-//  } yield Vector(x, y)
-//
+  val ints = Gen.choose(-100, 100)
+  
+  val vectors: Gen[Vector] = for {
+    x <- ints
+	y <- ints
+  } yield Vector(x, y)
+  
 //  property("* and length") = forAll(vectors, ints) { (v: Vector, s: Int) =>
 //    if (s >= 1.0) (v * s).length >= v.length
 //    else (v * s).length < v.length
 //  }
-//
+
 //  property("* and length") = forAll(vectors, ints) { (v: Vector, s0: Int) =>
 //    val s = math.abs(s0)
 //    if (s >= 1.0) (v * s).length >= v.length
 //    else (v * s).length < v.length
 //  }
 
+//  implicit val arbitraryVector = Arbitrary(vectors)
+//  
+//  implicit val arbitraryInts = Arbitrary(ints)
+//  
+//  property("* and length") = forAll { (v: Vector, s0: Int) =>
+//    val s = math.abs(s0)
+//    if (s >= 1.0) (v * s).length >= v.length
+//    else (v * s).length < v.length
+//  }
+  
+  
 	
 }
