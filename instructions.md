@@ -1,4 +1,3 @@
-
 ScalaCheck is a tool for testing Scala and Java programs, based on property specifications and
 automatic test data generation. The basic idea is that you define a property that specifies the
 behaviour of a method or some unit of code, and ScalaCheck checks that the property holds.
@@ -26,6 +25,7 @@ We first do the following preparatory steps.
 6. Create a new package `pp.scalacheck` in the source folder above.
 7. Create a new file `StringSpecification.scala` in the package above.
 
+Alternatively, you can download the entire project from: http://github.com/axel22/scalacheck-tutorial
 
 ### Testing `String`s
 
