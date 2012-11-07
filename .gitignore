@@ -1,0 +1,6 @@
+
+# Eclipse pleasantries
+
+bin/
+.settings/
+.cache
